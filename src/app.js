@@ -33,8 +33,9 @@ function newCard() {
   document.querySelector("#end").className = newColor;
   document.querySelector("#number").className = newColor;
 }
-
 setInterval(() => newCard(), 5000);
+
+document.querySelector("#newCard").addEventListener("click", () => newCard());
 
 window.onload = function() {
   newCard();
